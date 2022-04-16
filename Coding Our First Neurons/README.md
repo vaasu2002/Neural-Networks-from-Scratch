@@ -41,7 +41,7 @@ print(layer_output)
 import numpy as np 
 
 np.random.seed(0)
-# 3 x 4 (number of samples(number of inputs) x number of features)
+# 3 x 4 (number of samples x number of features(number of inputs))
 X = [[1, 2, 3, 2.5],
      [2.0, 5.0, -1.0, 2.0],
      [-1.5, 2.7, 3.3, -0.8]]
