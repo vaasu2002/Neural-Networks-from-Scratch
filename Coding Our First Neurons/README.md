@@ -13,3 +13,24 @@ output =  [inputs[0]*weight1[0] + inputs[1]*weight1[1] + inputs[2]*weight1[2] + 
            inputs[0]*weight3[0] + inputs[1]*weight3[1] + inputs[2]*weight3[2] + inputs[3]*weight3[3] + bias3]
 print(output)
 ```
+----------------------
+```ruby
+import numpy as np
+
+# 3 nuerons and 4 inputs for each neuron 
+
+# 3 x 4     
+weights = [[3.1,2.1,1.7,1.0],     # neuron 1
+           [0.6,0.4,0.7,0.2],     # neuron 2
+           [0.26,0.56,0.89,0.23]] # neuron 3 
+
+# 3 x 4
+X = [[1, 2, 3, 2.5],          # sample 1
+     [2.0, 5.0, -1.0, 2.0],   # sample 2
+     [-1.5, 2.7, 3.3, -0.8]]  # sample 3
+ 
+bias = [10,20,30]
+
+layer_output = np.dot(X , np.array(weights).T) + bias
+print(layer_output)
+```
