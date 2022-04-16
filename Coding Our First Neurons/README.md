@@ -1,4 +1,5 @@
 ![Three Neural](https://dagshub.com/vaasu2002/DeepLearning/raw/cef9ce8090ff467d16406cc28e1a69fe9a8c1eaa/Three%20Neural.PNG)
+```ruby
 import numpy as np 
 import nnfs
 from nnfs.datasets import spiral_data
@@ -67,3 +68,4 @@ loss_function = Loss_CategoricalCrossentropy()
 loss = loss_function.calculate(activation2.output, y)
 
 print("Loss:", loss)
+```
